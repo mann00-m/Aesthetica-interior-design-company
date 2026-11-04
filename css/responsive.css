@@ -1,0 +1,146 @@
+
+/* TABLET */
+@media (max-width: 991px) {
+    .rosette-navbar .navbar-collapse {
+        padding: 20px 0;
+    }
+
+    .rosette-navbar .navbar-nav {
+        align-items: flex-start !important;
+        gap: 12px;
+    }
+
+    .hero-section {
+        min-height: 85vh;
+        padding: 100px 7%;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+    .rosette-navbar .container-fluid {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .hero-section {
+        min-height: 85vh;
+        padding: 100px 25px;
+        background-position: 60% center;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-label {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+
+    .hero-bottom {
+        left: 25px;
+        right: 25px;
+        bottom: 20px;
+        gap: 12px;
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    .about-section {
+        padding: 80px 0;
+    }
+
+    .about-image {
+        height: 450px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-section {
+        padding: 65px 0;
+    }
+
+    .about-heading {
+        font-size: 42px;
+    }
+
+    .about-description {
+        font-size: 13px;
+    }
+
+    .about-image-wrapper {
+        padding-left: 18px;
+        padding-bottom: 25px;
+    }
+
+    .about-image {
+        height: 350px;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+
+    .projects-section {
+        padding: 80px 0;
+    }
+
+    .project-image,
+    .project-card:nth-child(1) .project-image {
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .projects-section {
+        padding: 65px 0;
+    }
+
+    .projects-heading {
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    .projects-title {
+        font-size: 43px;
+    }
+
+    .view-all {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .project-image,
+    .project-card:nth-child(1) .project-image {
+        height: 320px;
+    }
+
+    .project-info h3 {
+        font-size: 21px;
+    }
+
+}
+
+
+/* navbarlogo */
+@media (max-width: 576px) {
+    .rosette-logo {
+        width: 120px;
+    }
+}

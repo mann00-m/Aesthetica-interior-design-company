@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Leadership | Rosette Interior Designers</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        body {
+            background: #F5F2EC;
+            color: #24231F;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .leadership-hero {
+            padding: 100px 0 65px;
+            text-align: center;
+            background: #EEEAE2;
+        }
+
+        .leadership-label {
+            color: #A88B63;
+            font-size: 10px;
+            letter-spacing: 4px;
+            margin-bottom: 22px;
+        }
+
+        .leadership-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(45px, 6vw, 75px);
+            font-weight: 400;
+        }
+
+        .leadership-hero h1 span {
+            color: #A88B63;
+            font-style: italic;
+        }
+
+        .leadership-content {
+            padding: 100px 0;
+        }
+
+        .leader-image-wrapper {
+            position: relative;
+            padding: 0 25px 25px 0;
+        }
+
+        .leader-image-wrapper::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 85%;
+            height: 85%;
+            border: 1px solid #A88B63;
+        }
+
+        .leader-image {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 560px;
+            object-fit: cover;
+            background: #D8CFC0;
+        }
+
+        .leader-info {
+            padding-left: 35px;
+        }
+
+        .leader-role {
+            color: #A88B63;
+            font-size: 10px;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .leader-name {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(38px, 5vw, 58px);
+            font-weight: 400;
+            line-height: 1.15;
+            margin-bottom: 25px;
+        }
+
+        .leader-description {
+            color: #77736C;
+            font-size: 14px;
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+
+        .leader-details {
+            margin-top: 35px;
+            border-top: 1px solid #D8CFC0;
+        }
+
+        .leader-detail {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 17px 0;
+            border-bottom: 1px solid #D8CFC0;
+            font-size: 12px;
+        }
+
+        .leader-detail span:first-child {
+            color: #A88B63;
+            letter-spacing: 1px;
+        }
+
+        .leader-detail span:last-child {
+            text-align: right;
+        }
+
+        .leader-email {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 25px;
+            background: #24231F;
+            color: white;
+            font-size: 10px;
+            letter-spacing: 2px;
+            transition: .3s;
+        }
+
+        .leader-email:hover {
+            background: #A88B63;
+            color: white;
+        }
+
+        .philosophy-section {
+            background: #24231F;
+            color: #F5F2EC;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .philosophy-section p {
+            color: #A88B63;
+            font-size: 10px;
+            letter-spacing: 4px;
+        }
+
+        .philosophy-section h2 {
+            max-width: 850px;
+            margin: 25px auto 0;
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(32px, 5vw, 55px);
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        .philosophy-section h2 span {
+            color: #D8C2A2;
+            font-style: italic;
+        }
+
+        @media(max-width: 991px) {
+            .leader-info {
+                padding-left: 0;
+            }
+
+            .leader-image {
+                height: 450px;
+            }
+
+            .leadership-content {
+                padding: 75px 0;
+            }
+        }
+
+        @media(max-width: 576px) {
+            .leadership-hero {
+                padding: 75px 15px 50px;
+            }
+
+            .leader-image {
+                height: 380px;
+            }
+
+            .leader-name {
+                font-size: 42px;
+            }
+
+            .leader-detail {
+                font-size: 11px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg rosette-navbar">
+
+        <div class="container-fluid px-5">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/rosette-logo.png"
+                    alt="Rosette Interior Designers"
+                    class="rosette-logo">
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">HOME</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">ABOUT</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="leadership.html">LEADERSHIP</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#projects">PROJECTS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">SERVICES</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link contact-link" href="index.html#contact">
+                            LET'S TALK ↗
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- PAGE HERO -->
+    <section class="leadership-hero">
+
+        <div class="container" data-aos="fade-up">
+
+            <p class="leadership-label">
+                THE PEOPLE BEHIND ROSETTE
+            </p>
+
+            <h1>
+                Leadership & <span>Vision.</span>
+            </h1>
+
+        </div>
+
+    </section>
+
+
+    <!-- CEO PROFILE -->
+    <section class="leadership-content">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6" data-aos="fade-right">
+
+                    <div class="leader-image-wrapper">
+
+                        <img src="Screenshot 2026-11-02 002912.png"
+                            alt="Mr. Mahesh Kumar Prajapati"
+                            class="leader-image">
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6" data-aos="fade-left">
+
+                    <div class="leader-info">
+
+                        <p class="leader-role">
+                            FOUNDER & CHIEF EXECUTIVE OFFICER
+                        </p>
+
+                        <h2 class="leader-name">
+                            Mr. Mahesh Kumar Prajapati
+                        </h2>
+
+                        <p class="leader-description">
+                            At Rosette, leadership is driven by a passion
+                            for creating meaningful spaces and delivering
+                            thoughtful design solutions.
+                        </p>
+
+                        <p class="leader-description">
+                            Mr. Mahesh Kumar Prajapati plays an active role
+                            in the day-to-day operations, client relationships
+                            and project management at Rosette. His approach
+                            combines determination, resourcefulness and a
+                            commitment to continuous learning.
+                        </p>
+
+                        <p class="leader-description">
+                            With a focus on quality, functionality and
+                            attention to detail, he works towards building
+                            spaces that reflect each client's vision.
+                        </p>
+
+
+                        <div class="leader-details">
+
+                            <div class="leader-detail">
+                                <span>LOCATION</span>
+                                <span>Lucknow, Uttar Pradesh</span>
+                            </div>
+
+                            <div class="leader-detail">
+                                <span>EDUCATION</span>
+                                <span>Amity University</span>
+                            </div>
+
+                            <div class="leader-detail">
+                                <span>POSITION</span>
+                                <span>Chief Executive Officer</span>
+                            </div>
+
+                        </div>
+
+
+                        <a href="mailto:maheshprajapati8@gmail.com"
+                            class="leader-email">
+
+                            CONTACT CEO ↗
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PHILOSOPHY -->
+    <section class="philosophy-section">
+
+        <div class="container" data-aos="fade-up">
+
+            <p>THE ROSETTE PHILOSOPHY</p>
+
+            <h2>
+                Great spaces begin with a
+                <span>greater vision.</span>
+            </h2>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="rosette-footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+                <p>
+                    © 2026 ROSETTE Interior Designers.
+                    All Rights Reserved.
+                </p>
+
+                <a href="index.html">BACK TO HOME ↑</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 80
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+
+body {
+  background: #F5F2EC;
+  color: #24231F;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.back-link {
+  color: #24231F;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.detail-hero {
+  height: 78vh;
+  min-height: 520px;
+  position: relative;
+  display: flex;
+  align-items: end;
+  padding: 8%;
+  color: white;
+  overflow: hidden;
+}
+
+.detail-hero-image,
+.detail-hero-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.detail-hero-image {
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+}
+
+.detail-hero-overlay {
+  background: linear-gradient(90deg, rgba(20,19,16,.7), rgba(20,19,16,.08));
+}
+
+.detail-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.detail-eyebrow,
+.hero-index {
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.detail-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(48px, 8vw, 100px);
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.detail-hero-content > p:last-child {
+  color: #E5E1DA;
+  font-size: 14px;
+}
+
+.hero-index {
+  position: absolute;
+  z-index: 2;
+  right: 8%;
+  bottom: 35px;
+}
+
+.project-overview {
+  padding: 120px 0;
+}
+
+.section-label {
+  color: #A88B63;
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+.project-overview h2,
+.gallery-heading h2,
+.project-video-section h2,
+.next-project-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.2;
+}
+
+.project-overview h2 {
+  max-width: 650px;
+}
+
+.project-overview h2::first-letter {
+  color: #A88B63;
+}
+
+.overview-description {
+  color: #77736C;
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 35px;
+}
+
+.project-meta {
+  border-top: 1px solid #D8CFC0;
+}
+
+.project-meta div {
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 0;
+  border-bottom: 1px solid #D8CFC0;
+}
+
+.project-meta span {
+  color: #817B70;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.project-meta strong {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.project-gallery {
+  padding: 90px 0;
+  background: #EEEAE2;
+}
+
+.gallery-heading {
+  margin: 0 0 45px 3%;
+}
+
+.gallery-heading em,
+.project-video-section em,
+.next-project-section em {
+  color: #A88B63;
+  font-weight: 400;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item:nth-child(3n) .gallery-image {
+  height: 520px;
+}
+
+.project-video-section {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.video-placeholder {
+  margin-top: 45px;
+  background: #24231F;
+}
+
+.video-placeholder video {
+  display: block;
+  width: 100%;
+  max-height: 650px;
+}
+
+.video-note {
+  padding: 12px;
+  margin: 0;
+  color: #D8CFC0;
+  font-size: 11px;
+}
+
+.next-project-section {
+  padding: 110px 20px;
+  text-align: center;
+  background: #E8E1D6;
+}
+
+.detail-cta {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 16px 25px;
+  border: 1px solid #A88B63;
+  color: #24231F;
+  font-size: 10px;
+  letter-spacing: 2px;
+  transition: .3s ease;
+}
+
+.detail-cta:hover {
+  background: #A88B63;
+  color: white;
+}
+
+.detail-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 5%;
+  background: #24231F;
+  color: #D8CFC0;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.footer-brand {
+  color: #F5F2EC;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  letter-spacing: 4px;
+}
+
+.footer-brand span {
+  color: #A88B63;
+}
+
+@media (max-width: 768px) {
+  .detail-hero {
+    height: 70vh;
+    min-height: 480px;
+    padding: 30px;
+  }
+
+  .hero-index {
+    right: 30px;
+    bottom: 20px;
+    font-size: 8px;
+  }
+
+  .project-overview,
+  .project-video-section {
+    padding: 75px 0;
+  }
+
+  .project-gallery {
+    padding: 70px 0;
+  }
+
+  .gallery-image,
+  .gallery-item:nth-child(3n) .gallery-image {
+    height: 300px;
+  }
+
+  .detail-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .back-link {
+    font-size: 8px;
+  }
+}
+
+
+
+
+
+/*  */
+
+
+
+/*  */
+
+
+
+body {
+  animation: pageEntrance .8s ease both;
+}
+
+@keyframes pageEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
